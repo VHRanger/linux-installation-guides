@@ -1,0 +1,14 @@
+// good guide here: https://solarianprogrammer.com/2017/12/13/linux-wsl-install-clang-libcpp-compile-cpp-17-programs/
+
+sudo apt update
+sudo apt upgrade
+sudo apt install xz-utils wget build-essential
+wget http://releases.llvm.org/6.0.0/clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+tar xf clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+sudo mv clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04 /usr/local/clang_6.0.0
+
+// add compiler to path forever
+nano ~/.profile
+// Add this at the bottom (replace anaconda3_linux with anaconda dist name)
+export PATH=/usr/local/clang_6.0.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/clang_6.0.0/lib:$LD_LIBRARY_PATH
