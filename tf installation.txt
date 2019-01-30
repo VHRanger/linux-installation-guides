@@ -1,0 +1,12 @@
+1) Install the three CUDA 9.0 packages in order
+	cuda_9.0.176.1_windows.exe
+	cuda_9.0.176.2_windows.exe
+	cuda_9.0.176_win10_network.exe
+2) copy the .dlls and libs from CUDNN into your CUDA installation's /bin and /include
+	cudnn-9.0-windows10-x64-v7.zip
+3) make sure you have Anaconda python 3.5+
+4) In an admin cmd prompt, install tensorflow 
+5) Install pytorch with cuda 9.0 GPU
+
+You'll need to create a nvidia dev account to re-download the dev framework
+https://developer.nvidia.com/rdp/cudnn-archive
